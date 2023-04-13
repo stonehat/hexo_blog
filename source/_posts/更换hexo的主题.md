@@ -53,11 +53,11 @@ comments: false
 ```
 
 ### 修改sheme
-默认的scheme是Muse，菜单在顶部，不太喜欢。修改为Mist。在主题配置/themes/next/_config.yml中找到“Scheme Settings”，修改如下：
+默认的scheme是Muse，菜单在顶部，不太喜欢。修改为Pisces。在主题配置/themes/next/_config.yml中找到“Scheme Settings”，修改如下：
 ```
 # Schemes
 #scheme: Muse
-scheme: Mist
-#scheme: Pisces
+#scheme: Mist
+scheme: Pisces
 #scheme: Gemini
 ```
