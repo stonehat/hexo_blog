@@ -1,6 +1,42 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>Hello World</title>
+    <url>/2018/06/18/hello-world/</url>
+    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/deployment.html">Deployment</a></p>
+]]></content>
+  </entry>
+  <entry>
+    <title>时隔5年再次尝试写blog</title>
+    <url>/2023/04/11/%E6%97%B6%E9%9A%945%E5%B9%B4%E5%86%8D%E6%AC%A1%E5%B0%9D%E8%AF%95%E5%86%99blog/</url>
+    <content><![CDATA[<h2 id="时隔5年"><a href="#时隔5年" class="headerlink" title="时隔5年"></a>时隔5年</h2><p>啊，上次写blog，还是在来杭州之前。结果，进了H3C后，就各种忙，完全没有写blog的时间。<br>5年了，似乎是有点那么自由的时间了。可以再尝试写写了？</p>
+<h2 id="阅读“荒诞的藩篱”"><a href="#阅读“荒诞的藩篱”" class="headerlink" title="阅读“荒诞的藩篱”"></a>阅读“荒诞的藩篱”</h2><p>最近在读《西西弗神话》，是真的难懂。一段话要仔细看好几遍，才能稍微明白加缪在说什么。例如：</p>
+<blockquote>
+<p>这种对统合的怀念，对绝对的渴望，表明了人间戏剧最基本的演进。然而，说怀念是个事实，并不意味着怀念应当立即得到缓解。</p>
+</blockquote>
+<p>这里说对统合的怀念，其实是想说，这种统合（希望有一种单一真理能解释一切）是不可能存在的————在无知的时候以为掌握了这样的真理，而等到发现真相后，就再也无法企及这种状态，因此只能怀念。而这样一种复杂的状态，加缪则用一个“怀念”来表现。很精妙，也让很难理解。</p>
+<blockquote>
+<p>假如思想在现象的幻境中发现一些永恒的联系，既能把现象概括为单一的原则，又把自身归纳为单一的原则，那就算得上精神至福了，而精神至福者的神话只不过是可笑的赝品。</p>
+</blockquote>
+<p>而我目前就在追求这种“精神至福”。我希望有一种理论，能指导我们设计系统。这种理论，或者思想，是单一的、简单的。</p>
+]]></content>
+      <tags>
+        <tag>博客 西西弗神话 阅读</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>搭建hexo博客</title>
     <url>/2018/06/18/%E6%90%AD%E5%BB%BAhexo%E5%8D%9A%E5%AE%A2/</url>
     <content><![CDATA[<p>并非是一个教程。写这个东西，第一呢，是刚搭建好博客，要找点东西写写，试试。二呢，是做一个记录。</p>
@@ -8,13 +44,31 @@
 <h2 id="安装-git-amp-配置-github"><a href="#安装-git-amp-配置-github" class="headerlink" title="安装 git &amp; 配置 github"></a>安装 git &amp; 配置 github</h2><p>安装git，这个其实没有做。因为，本身就是用git做代码管理的，所以这部分对于大部分程序员都是跳过的。而且本身也比较简单，用apt就能安装，只是需要记住设置全局的用户名和邮箱，然后生成rsa密钥，将公钥加入到github中。<br>需要注意的是：新建的工程名，必须是&lt;github_accounts_name&gt;.github.io</p>
 <h2 id="安装-hexo"><a href="#安装-hexo" class="headerlink" title="安装 hexo"></a>安装 hexo</h2><p><a href="http://www.cnblogs.com/alex21/p/5368676.html">http://www.cnblogs.com/alex21/p/5368676.html</a> 中说一共有三种方法，我选了第一种。另外，这篇帖子中说，需要软链接，将node软链接到nodejs，但我发现安装好后，&#x2F;usr&#x2F;bin&#x2F;下生成的可执行文件就是node，然后它已经做好了nodejs-&gt;node的软链接。具体代码：<br>    $ sudo apt-get install nodejs<br>    $ sudo apt-get install npm<br>    $ sudo npm install -g hexo-cli</p>
 <h2 id="创建与初始化"><a href="#创建与初始化" class="headerlink" title="创建与初始化"></a>创建与初始化</h2><p>创建并初始化hexo项目。<br>新建一个文件夹，用于存放项目，名字就无所谓啦。<br>进入文件夹后，进行初始化：<br>    $ hexo init<br>    $ npm install hexo-deployer-git –save</p>
-<p>接着是配置。修改目录下的_config.yml文件，在其最后，找到deploy的配置项，进行补全，其实就是添加部署方式、仓库地址、分支名：<br>    deploy:<br>        type: git<br>        repo: <a href="mailto:&#103;&#105;&#116;&#64;&#x67;&#105;&#116;&#x68;&#117;&#98;&#x2e;&#99;&#x6f;&#109;">&#103;&#105;&#116;&#64;&#x67;&#105;&#116;&#x68;&#117;&#98;&#x2e;&#99;&#x6f;&#109;</a>:username&#x2F;username.github.io.git<br>        branch: master</p>
+<p>接着是配置。修改目录下的_config.yml文件，在其最后，找到deploy的配置项，进行补全，其实就是添加部署方式、仓库地址、分支名：<br>    deploy:<br>        type: git<br>        repo: <a href="mailto:&#x67;&#x69;&#116;&#x40;&#x67;&#x69;&#x74;&#104;&#x75;&#98;&#46;&#x63;&#111;&#109;">&#x67;&#x69;&#116;&#x40;&#x67;&#x69;&#x74;&#104;&#x75;&#98;&#46;&#x63;&#111;&#109;</a>:username&#x2F;username.github.io.git<br>        branch: master</p>
 <h2 id="编译部署"><a href="#编译部署" class="headerlink" title="编译部署"></a>编译部署</h2><p>就一行命令：<br>    $ hexo g -d<br>当然也可以用两行命令：<br>    $ hexo g<br>    $ hexo d<br>其实就是两个步骤：编译（当然，这里用的其实生成：generate），接着就是部署——deploy。</p>
 <p>初始化完成的项目里，有一个“hello world”的文章，是一篇hexo的教程。如果要添加新的文章，使用命令：<br>    $ hexo new post “post_name”<br>然后在source&#x2F;_post&#x2F;post目录下找到新增的文章，就可以编辑了。<br>最后说一句，文章的语法使用的是Markdown。相信，想使用hexo的应该是冲着这个来的。反正，我就是因为是github+Markdown才入这个坑的。</p>
 <h2 id="克隆"><a href="#克隆" class="headerlink" title="克隆"></a>克隆</h2><p>这个问题是这样的。其实在一个月前，我已经搭建过一次hexo了。不过，搭建了之后除了一篇“第一次使用”的东东，就没有下文了。后来，又因为一些原因，重装了系统（其实是太懒，没有升级系统，一直用的16.10,结果现在16.10和17.04都没有源了，完全更新不了了，一些软件也装不了。找了许多教程试了一遍都不行，最后只能重装了）。<br>昨天刚重装完系统，今天开始安装常用的工具，以及搭建生产环境，顺便把这个hexo也搭建起来，嗯，我以后是一定会努力维持写blog的习惯的！<br>不过，这个时候，就发现了一个问题，搭建好后，以前发的文章没了！仔细一想，也对，搭建的过程中，是直接初始化后就编译部署了，部署上去的肯定是一个空的模板，以前的东西肯定被覆盖了。还好，之前没有写什么东西，不然这一次就GG了。<br>不过，既然发现了问题，就要去解决他！<br>其实，解决方法也很简单，把这个项目托管就好了。以后，再需要搭建的时候，从github上pull下来就好。</p>
 ]]></content>
       <tags>
         <tag>技术 博客 github</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>给hexo安装搜索</title>
+    <url>/2023/04/13/%E7%BB%99hexo%E5%AE%89%E8%A3%85%E6%90%9C%E7%B4%A2/</url>
+    <content><![CDATA[<h2 id="插件"><a href="#插件" class="headerlink" title="插件"></a>插件</h2><p>所用插件为:hexo-generator-searchdb</p>
+<h3 id="插件原理"><a href="#插件原理" class="headerlink" title="插件原理"></a>插件原理</h3><p>这个插件会扫描博客文章，根据“——config.yml”的配置从文章里获取内容生成一个xml&#x2F;json文件的结果，类似于博客中文章信息的摘要把，搜索的时候就搜索这个文件的内容。</p>
+<h3 id="安装插件"><a href="#安装插件" class="headerlink" title="安装插件"></a>安装插件</h3><p><code>npm install hexo-generator-searchdb --save</code></p>
+<h3 id="全局配置"><a href="#全局配置" class="headerlink" title="全局配置"></a>全局配置</h3><p>修改全局配置文件_config.yml</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">search:</span><br><span class="line">    path: search.xml</span><br><span class="line">    field: post</span><br><span class="line">    format: html</span><br><span class="line">    limit: 10000</span><br></pre></td></tr></table></figure>
+
+<h3 id="主题配置"><a href="#主题配置" class="headerlink" title="主题配置"></a>主题配置</h3><p>修改主题配置文件\themes{theme_name}_config.yml</p>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># local search</span><br><span class="line">local_search:</span><br><span class="line">    enable:true</span><br></pre></td></tr></table></figure>
+
+<h2 id="问题"><a href="#问题" class="headerlink" title="问题"></a>问题</h2><p>安装后完全不起作用！<br>点击搜索框，输入文字后，敲击回车进行搜索，仍然跳转到google搜索引擎里，而且并不能搜索。<br>探寻了一会儿，大概原因是这个网页需要授权给google才能进行搜索。额，也不太想这么去折腾。<br>最后，找了一通，发现默认的主题landscape，似乎没法解决。必须要换一个主题了！</p>
+]]></content>
+      <tags>
+        <tag>hexo</tag>
       </tags>
   </entry>
   <entry>
@@ -41,24 +95,6 @@
       </tags>
   </entry>
   <entry>
-    <title>时隔5年再次尝试写blog</title>
-    <url>/2023/04/11/%E6%97%B6%E9%9A%945%E5%B9%B4%E5%86%8D%E6%AC%A1%E5%B0%9D%E8%AF%95%E5%86%99blog/</url>
-    <content><![CDATA[<h2 id="时隔5年"><a href="#时隔5年" class="headerlink" title="时隔5年"></a>时隔5年</h2><p>啊，上次写blog，还是在来杭州之前。结果，进了H3C后，就各种忙，完全没有写blog的时间。<br>5年了，似乎是有点那么自由的时间了。可以再尝试写写了？</p>
-<h2 id="阅读“荒诞的藩篱”"><a href="#阅读“荒诞的藩篱”" class="headerlink" title="阅读“荒诞的藩篱”"></a>阅读“荒诞的藩篱”</h2><p>最近在读《西西弗神话》，是真的难懂。一段话要仔细看好几遍，才能稍微明白加缪在说什么。例如：</p>
-<blockquote>
-<p>这种对统合的怀念，对绝对的渴望，表明了人间戏剧最基本的演进。然而，说怀念是个事实，并不意味着怀念应当立即得到缓解。</p>
-</blockquote>
-<p>这里说对统合的怀念，其实是想说，这种统合（希望有一种单一真理能解释一切）是不可能存在的————在无知的时候以为掌握了这样的真理，而等到发现真相后，就再也无法企及这种状态，因此只能怀念。而这样一种复杂的状态，加缪则用一个“怀念”来表现。很精妙，也让很难理解。</p>
-<blockquote>
-<p>假如思想在现象的幻境中发现一些永恒的联系，既能把现象概括为单一的原则，又把自身归纳为单一的原则，那就算得上精神至福了，而精神至福者的神话只不过是可笑的赝品。</p>
-</blockquote>
-<p>而我目前就在追求这种“精神至福”。我希望有一种理论，能指导我们设计系统。这种理论，或者思想，是单一的、简单的。</p>
-]]></content>
-      <tags>
-        <tag>博客 西西弗神话 阅读</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>西西弗神话_荒诞的藩篱_摘抄(2)</title>
     <url>/2023/04/12/%E8%A5%BF%E8%A5%BF%E5%BC%97%E7%A5%9E%E8%AF%9D-%E8%8D%92%E8%AF%9E%E7%9A%84%E8%97%A9%E7%AF%B1-%E6%91%98%E6%8A%84-2/</url>
     <content><![CDATA[<h2 id="摘抄"><a href="#摘抄" class="headerlink" title="摘抄"></a>摘抄</h2><p>我永远是自己的陌路人。</p>
@@ -70,42 +106,6 @@
 ]]></content>
       <tags>
         <tag>西西弗神话 阅读</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Hello World</title>
-    <url>/2018/06/18/hello-world/</url>
-    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/deployment.html">Deployment</a></p>
-]]></content>
-  </entry>
-  <entry>
-    <title>给hexo安装搜索</title>
-    <url>/2023/04/13/%E7%BB%99hexo%E5%AE%89%E8%A3%85%E6%90%9C%E7%B4%A2/</url>
-    <content><![CDATA[<h2 id="插件"><a href="#插件" class="headerlink" title="插件"></a>插件</h2><p>所用插件为:hexo-generator-searchdb</p>
-<h3 id="插件原理"><a href="#插件原理" class="headerlink" title="插件原理"></a>插件原理</h3><p>这个插件会扫描博客文章，根据“——config.yml”的配置从文章里获取内容生成一个xml&#x2F;json文件的结果，类似于博客中文章信息的摘要把，搜索的时候就搜索这个文件的内容。</p>
-<h3 id="安装插件"><a href="#安装插件" class="headerlink" title="安装插件"></a>安装插件</h3><p><code>npm install hexo-generator-searchdb --save</code></p>
-<h3 id="全局配置"><a href="#全局配置" class="headerlink" title="全局配置"></a>全局配置</h3><p>修改全局配置文件_config.yml</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">search:</span><br><span class="line">    path: search.xml</span><br><span class="line">    field: post</span><br><span class="line">    format: html</span><br><span class="line">    limit: 10000</span><br></pre></td></tr></table></figure>
-
-<h3 id="主题配置"><a href="#主题配置" class="headerlink" title="主题配置"></a>主题配置</h3><p>修改主题配置文件\themes{theme_name}_config.yml</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"># local search</span><br><span class="line">local_search:</span><br><span class="line">    enable:true</span><br></pre></td></tr></table></figure>
-
-<h2 id="问题"><a href="#问题" class="headerlink" title="问题"></a>问题</h2><p>安装后完全不起作用！<br>点击搜索框，输入文字后，敲击回车进行搜索，仍然跳转到google搜索引擎里，而且并不能搜索。<br>探寻了一会儿，大概原因是这个网页需要授权给google才能进行搜索。额，也不太想这么去折腾。<br>最后，找了一通，发现默认的主题landscape，似乎没法解决。必须要换一个主题了！</p>
-]]></content>
-      <tags>
-        <tag>hexo</tag>
       </tags>
   </entry>
 </search>
