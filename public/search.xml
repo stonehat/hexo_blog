@@ -17,6 +17,9 @@
 
 <p>More info: <a href="https://hexo.io/docs/deployment.html">Deployment</a></p>
 ]]></content>
+      <tags>
+        <tag>hexo</tag>
+      </tags>
   </entry>
   <entry>
     <title>时隔5年再次尝试写blog</title>
@@ -33,7 +36,9 @@
 <p>而我目前就在追求这种“精神至福”。我希望有一种理论，能指导我们设计系统。这种理论，或者思想，是单一的、简单的。</p>
 ]]></content>
       <tags>
-        <tag>博客 西西弗神话 阅读</tag>
+        <tag>博客</tag>
+        <tag>西西弗神话</tag>
+        <tag>阅读</tag>
       </tags>
   </entry>
   <entry>
@@ -44,13 +49,15 @@
 <h2 id="安装-git-amp-配置-github"><a href="#安装-git-amp-配置-github" class="headerlink" title="安装 git &amp; 配置 github"></a>安装 git &amp; 配置 github</h2><p>安装git，这个其实没有做。因为，本身就是用git做代码管理的，所以这部分对于大部分程序员都是跳过的。而且本身也比较简单，用apt就能安装，只是需要记住设置全局的用户名和邮箱，然后生成rsa密钥，将公钥加入到github中。<br>需要注意的是：新建的工程名，必须是&lt;github_accounts_name&gt;.github.io</p>
 <h2 id="安装-hexo"><a href="#安装-hexo" class="headerlink" title="安装 hexo"></a>安装 hexo</h2><p><a href="http://www.cnblogs.com/alex21/p/5368676.html">http://www.cnblogs.com/alex21/p/5368676.html</a> 中说一共有三种方法，我选了第一种。另外，这篇帖子中说，需要软链接，将node软链接到nodejs，但我发现安装好后，&#x2F;usr&#x2F;bin&#x2F;下生成的可执行文件就是node，然后它已经做好了nodejs-&gt;node的软链接。具体代码：<br>    $ sudo apt-get install nodejs<br>    $ sudo apt-get install npm<br>    $ sudo npm install -g hexo-cli</p>
 <h2 id="创建与初始化"><a href="#创建与初始化" class="headerlink" title="创建与初始化"></a>创建与初始化</h2><p>创建并初始化hexo项目。<br>新建一个文件夹，用于存放项目，名字就无所谓啦。<br>进入文件夹后，进行初始化：<br>    $ hexo init<br>    $ npm install hexo-deployer-git –save</p>
-<p>接着是配置。修改目录下的_config.yml文件，在其最后，找到deploy的配置项，进行补全，其实就是添加部署方式、仓库地址、分支名：<br>    deploy:<br>        type: git<br>        repo: <a href="mailto:&#x67;&#x69;&#116;&#x40;&#x67;&#x69;&#x74;&#104;&#x75;&#98;&#46;&#x63;&#111;&#109;">&#x67;&#x69;&#116;&#x40;&#x67;&#x69;&#x74;&#104;&#x75;&#98;&#46;&#x63;&#111;&#109;</a>:username&#x2F;username.github.io.git<br>        branch: master</p>
+<p>接着是配置。修改目录下的_config.yml文件，在其最后，找到deploy的配置项，进行补全，其实就是添加部署方式、仓库地址、分支名：<br>    deploy:<br>        type: git<br>        repo: <a href="mailto:&#x67;&#x69;&#116;&#64;&#x67;&#x69;&#116;&#104;&#x75;&#98;&#x2e;&#x63;&#111;&#109;">&#x67;&#x69;&#116;&#64;&#x67;&#x69;&#116;&#104;&#x75;&#98;&#x2e;&#x63;&#111;&#109;</a>:username&#x2F;username.github.io.git<br>        branch: master</p>
 <h2 id="编译部署"><a href="#编译部署" class="headerlink" title="编译部署"></a>编译部署</h2><p>就一行命令：<br>    $ hexo g -d<br>当然也可以用两行命令：<br>    $ hexo g<br>    $ hexo d<br>其实就是两个步骤：编译（当然，这里用的其实生成：generate），接着就是部署——deploy。</p>
 <p>初始化完成的项目里，有一个“hello world”的文章，是一篇hexo的教程。如果要添加新的文章，使用命令：<br>    $ hexo new post “post_name”<br>然后在source&#x2F;_post&#x2F;post目录下找到新增的文章，就可以编辑了。<br>最后说一句，文章的语法使用的是Markdown。相信，想使用hexo的应该是冲着这个来的。反正，我就是因为是github+Markdown才入这个坑的。</p>
 <h2 id="克隆"><a href="#克隆" class="headerlink" title="克隆"></a>克隆</h2><p>这个问题是这样的。其实在一个月前，我已经搭建过一次hexo了。不过，搭建了之后除了一篇“第一次使用”的东东，就没有下文了。后来，又因为一些原因，重装了系统（其实是太懒，没有升级系统，一直用的16.10,结果现在16.10和17.04都没有源了，完全更新不了了，一些软件也装不了。找了许多教程试了一遍都不行，最后只能重装了）。<br>昨天刚重装完系统，今天开始安装常用的工具，以及搭建生产环境，顺便把这个hexo也搭建起来，嗯，我以后是一定会努力维持写blog的习惯的！<br>不过，这个时候，就发现了一个问题，搭建好后，以前发的文章没了！仔细一想，也对，搭建的过程中，是直接初始化后就编译部署了，部署上去的肯定是一个空的模板，以前的东西肯定被覆盖了。还好，之前没有写什么东西，不然这一次就GG了。<br>不过，既然发现了问题，就要去解决他！<br>其实，解决方法也很简单，把这个项目托管就好了。以后，再需要搭建的时候，从github上pull下来就好。</p>
 ]]></content>
       <tags>
-        <tag>技术 博客 github</tag>
+        <tag>技术</tag>
+        <tag>博客</tag>
+        <tag>github</tag>
       </tags>
   </entry>
   <entry>
@@ -105,7 +112,8 @@
 <p>但，加缪又说，荒诞是与世界唯一的联系。大概意思是，我们如果不感到荒诞，那么就意味着没有认识到世界的真相——我们活在自己的世界里，活在自己构想的虚幻中。而只有感到荒诞的时候，才与真实的世界产生联系。</p>
 ]]></content>
       <tags>
-        <tag>西西弗神话 阅读</tag>
+        <tag>西西弗神话</tag>
+        <tag>阅读</tag>
       </tags>
   </entry>
 </search>

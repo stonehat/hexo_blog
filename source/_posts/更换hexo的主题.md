@@ -1,7 +1,8 @@
 ---
 title: 更换hexo的主题
 date: 2023-04-13 23:16:54
-tags: hexo
+tags: 
+    - hexo
 ---
 
 ## next主题

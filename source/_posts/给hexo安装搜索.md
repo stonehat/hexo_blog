@@ -1,7 +1,8 @@
 ---
 title: 给hexo安装搜索
 date: 2023-04-13 22:00:41
-tags: hexo
+tags: 
+    - hexo
 ---
 
 ## 插件
