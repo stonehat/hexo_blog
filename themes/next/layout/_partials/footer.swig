@@ -1,3 +1,7 @@
+{% if theme.footer.counter %}
+  <script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+{% endif %}
+
 {%- if theme.footer.beian.enable %}
   <div class="beian">
     {{- next_url('https://beian.miit.gov.cn', theme.footer.beian.icp + ' ') }}
